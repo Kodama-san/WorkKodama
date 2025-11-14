@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Время не реально.</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/clock.css">
+</head>
+<body>
+<div class='clock-cont'>
+<img src="../image/clock.png" class="clock">
+<img src="../image/arrow.png" class="arrow a1">
+<img src="../image/arrow.png" class="arrow a2">
+<img src="../image/maya.png" class="maya">
+<img src="../image/gear.png" class="gear g1">
+<img src="../image/gear2.png" class="gear g2">
+<img src="../image/gear3.png" class="gear g3">
+</div>
+<a href="sea.html" class='back'>Хочу вернуться.</a>
+<audio id="Audio" src="../mp3/01033.mp3" loop='true' preload="auto">
+</audio>
+<a onClick="togglePlay()" id='shum'>Услышьте пустоту.</a>
+<script>
+var myAudio = document.getElementById("Audio");
+var isPlaying = false;
+
+function togglePlay() {
+  isPlaying ? myAudio.pause() : myAudio.play();
+};
+
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
+document.getElementById('shum').addEventListener('click', function() {
+    this.textContent = this.textContent === 'Услышьте тишину.' ? 'Услышьте пустоту.' : 'Услышьте тишину.';
+});
+</script>
+</body>
+</html>

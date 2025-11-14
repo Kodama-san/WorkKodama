@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Спокойствие.</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/sea.css">
+</head>
+<body>
+<embed name="GoodEnough" src="../mp3/sea.mp3" loop="false" hidden="true" autostart="true">
+<div class="clouds">
+    <img src="../image/cloud.png" class="clouds">
+	<img src="../image/cloud.png" class="clouds">
+	<img src="../image/cloud.png" class="clouds">
+</div>
+<div class="ship"><img src="../image/Ship-PNG-HD.png" class="ship"></div>
+<div class="seagul">
+    <img src="../image/seagul.png" class="seagul s2">
+    <img src="../image/seagul.png" class="seagul s1">
+	<img src="../image/seagul.png" class="seagul s3">
+	<img src="../image/seagul.png" class="seagul s4">
+	<img src="../image/seagul.png" class="seagul s5">
+	<img src="../image/seagul.png" class="seagul s6">
+	<img src="../image/seagul.png" class="seagul s7">
+</div>
+<a href="clock.html" class='next'>Который час?</a>
+<audio id="myAudio" src="../mp3/sea.mp3" loop='true' preload="auto">
+</audio>
+<a onClick="togglePlay()" id='play'>Услышьте море.</a>
+<script>
+var myAudio = document.getElementById("myAudio");
+var isPlaying = false;
+
+function togglePlay() {
+  isPlaying ? myAudio.pause() : myAudio.play();
+};
+
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
+document.getElementById('play').addEventListener('click', function() {
+    this.textContent = this.textContent === 'Услышьте тишину.' ? 'Услышьте море.' : 'Услышьте тишину.';
+});
+</script>
+</body>
+</html>

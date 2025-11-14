@@ -1,0 +1,408 @@
+body{
+	background-image: url('../image/back.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+
+@keyframes go{
+	0%{
+		left: -35%;
+	}
+	50%{
+		transform: translate3d(10px -25px);
+	}
+	100%{
+		left: 100%;
+		transform: translate3d(10px 5px);
+		animation-timing-function: linear;
+	}
+}
+
+@keyframes scare{
+	0%{
+		right: 0%;
+		width: 1%;
+		top: -2%;
+	}
+	85%{
+		transform: translate3d(10px 100px);
+		left: 5%;
+		top: -25%;
+		width: 80%;
+		animation-timing-function: ease-in;
+	}
+	90%{
+		left: -10%;
+		top: -35%;
+		width: 85%;
+	animation-timing-function: ease-in;
+	}
+	95%{
+		left: -30%;
+		top: -55%;
+		width: 90%;
+	animation-timing-function: ease-in;
+	}
+	100%{
+		left: -80%;
+		top: -100%;
+		width: 100%;
+	animation-timing-function: ease-in;
+	}
+}
+
+@keyframes scare2{
+	0%{
+		right: 100%;
+		width: 1%;
+		top: -2%;
+	}
+	80%{
+		transform: translate3d(10px 100px);
+		left: 25%;
+		top: 10%;
+		width: 80%;
+		animation-timing-function: ease-in;
+	}
+	90%{
+		left: 60%;
+		top: -35%;
+		width: 85%;
+	animation-timing-function: ease-in;
+	}
+	95%{
+		left: 80%;
+		top: -55%;
+		width: 90%;
+	animation-timing-function: ease-in;
+	}
+	100%{
+		left: 100%;
+		top: -100%;
+		width: 100%;
+	animation-timing-function: ease-in;
+	}
+}
+
+@keyframes go-l-r-l{
+	0%{
+	    left: -5%;
+		transform: translatex(-50%) scalex(1);
+	}
+    24%{
+		left: 105%;
+		top: 20%;
+		transform: translatex(-50%) scalex(1);
+	}
+    25%{
+		left: 105%;
+		transform: translatex(-50%) scalex(-1);
+	}
+    49%{
+	    left: -5%;
+		top: 30%;
+		transform: translatex(-50%) scalex(-1);
+	}
+	50%{
+	    left: -5%;
+		transform: translatex(-50%) scalex(1);
+	}
+    74%{
+		left: 105%;
+		top: 25%;
+		transform: translatex(-50%) scalex(1);
+	}
+	75%{
+		left: 105%;
+		transform: translatex(-50%) scalex(-1);
+	}
+    99%{
+	    left: -5%;
+		top: 20%;
+		transform: translatex(-50%) scalex(-1);
+	}
+	100%{
+	    left: -5%;
+		transform: translatex(-50%) scalex(1);
+	}
+}
+
+@keyframes go-zig-zag{
+	0%{
+	    left: -5%;
+		transform: translatex(-50%) scalex(1);
+	}
+	12%{
+		left: 105%;
+		top: 40%;
+		width: 8%;
+		transform: translatex(-50%) scalex(1);
+	}
+    24%{
+		left: 105%;
+		top: 10%;
+		width: 5%;
+		transform: translatex(-50%) scalex(1);
+	}
+    25%{
+		left: 105%;
+	    top: 20%;
+		width: 5%;
+		transform: translatex(-50%) scalex(-1);
+	}
+	36%{
+		left: -5%;
+		top: 40%;
+		width: 8%;
+		transform: translatex(-50%) scalex(-1);
+	}
+    49%{
+	    left: -5%;
+		top: 20%;
+		width: 5%;
+		transform: translatex(-50%) scalex(-1);
+	}
+	50%{
+	    left: -5%;
+		top: 20%;
+		width: 5%;
+		transform: translatex(-50%) scalex(1);
+	}
+	62%{
+		left: 105%;
+		top: 40%;
+		width: 8%;
+		transform: translatex(-50%) scalex(1);
+	}
+    74%{
+		left: 105%;
+		top: 20%;
+		width: 5%;
+		transform: translatex(-50%) scalex(1);
+	}
+	75%{
+		left: 105%;
+		top: 20%;
+		width: 5%;
+		transform: translatex(-50%) scalex(-1);
+	}
+	86%{
+		left: -5%;
+		top: 40%;
+		width: 8%;
+		transform: translatex(-50%) scalex(-1);
+	}
+    99%{
+	    left: -5%;
+		top: 20%;
+		width: 5%;
+		transform: translatex(-50%) scalex(-1);
+	}
+	100%{
+	    left: -5%;
+		top: 20%;
+		width: 5%;
+		transform: translatex(-50%) scalex(1);
+	}
+}
+
+@keyframes go-r-l-r{
+	0%{
+	    left: 105%;
+		transform: translatex(-50%) scalex(-1);
+	}
+    24%{
+		left: -5%;
+		top: 20%;
+		transform: translatex(-50%) scalex(-1);
+	}
+    25%{
+		left: -5%;
+		transform: translatex(-50%) scalex(1);
+	}
+    49%{
+	    left: 105%;
+		top: 30%;
+		transform: translatex(-50%) scalex(1);
+	}
+	50%{
+	    left: 105%;
+		transform: translatex(-50%) scalex(-1);
+	}
+    74%{
+		left: -5%;
+		top: 25%;
+		transform: translatex(-50%) scalex(-1);
+	}
+	75%{
+		left: -5%;
+		transform: translatex(-50%) scalex(1);
+	}
+    99%{
+	    left: 105%;
+		top: 20%;
+		transform: translatex(-50%) scalex(1);
+	}
+	100%{
+	    left: 105%;
+		transform: translatex(-50%) scalex(1-);
+	}
+}
+
+@keyframes float{
+	0%{
+		left: -100%;
+		opacity: 1;
+	}
+	100%{
+		transform: translate(200px);
+		opacity: 0;
+		left: 60%;
+	}
+}
+
+@keyframes tic-tac{
+	0%{
+		bottom: -100%;
+		opacity: 0;
+	}
+	90%{
+		bottom: -100%;
+	    opacity: 0;
+	}
+		
+	100%{
+	    bottom: 30%;
+	    transform: translate(0 10px)
+		opacity: 1;
+	}
+}
+.ship img{
+	width: 40%;
+	position: absolute;
+	top: 10%;
+	left: -100%;
+	animation-name: go;
+	animation-duration: 33s;
+	animation-timing-function: ease-out;
+	z-index: 3;
+}
+
+.ship div{
+	position: absolute;
+	z-index: 3;
+}
+.clouds img{
+	opacity: 0;
+	width: 30%;
+	top: -10%;
+	animation-name: float;
+	animation-duration: 33s;
+}
+.clouds div{
+	position: absolute;
+	top: -10%;
+	left: -10%;
+	z-index: 1;
+}
+.seagul img{
+	position: absolute;
+}
+.s1{
+	z-index: 5;
+	transform: scale(-1, 1);
+	width: 1%;
+	left: 95%;
+	top: -5%;
+	animation-name: scare;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in;
+	animation-delay: 11s;
+}
+.s2{
+	z-index: 5;
+	width: 5%;
+	left: 0%;
+	top: -12%;
+	animation-name: scare2;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in;
+	animation-delay: 6s;
+}
+.s3{
+	z-index: 5;
+	width: 5%;
+	left: 0%;
+	top: -12%;
+	animation-name: scare2;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in;
+	animation-delay: 12s;
+}
+.s4{
+	z-index: 5;
+	transform: scale(-1, 1);
+	width: 1%;
+	left: 95%;
+	top: -5%;
+	animation-name: scare;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in;
+	animation-delay: 18s;
+}
+.s5{
+	z-index: 2;
+	width: 5%;
+	left: -5%;
+	top: 25%;
+	animation-name: go-l-r-l;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+}
+.s6{
+	z-index: 4;
+	width: 5%;
+	left: -5%;
+	top: 25%;
+	animation-name: go-zig-zag;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+}
+.s7{
+	z-index: 2;
+	width: 3%;
+	left: -5%;
+	top: 10%;
+	animation-name: go-r-l-r;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+}
+
+.next{
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 60pt;
+	font-weight: bold;
+	text-decoration: none;
+	position: absolute;
+	bottom: 30%;
+	color: white;
+	animation-name: tic-tac;
+	animation-duration: 33s;
+	animation-timing-function: ease-out;
+	cursor: pointer;
+}
+
+#play{
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 30pt;
+	font-weight: bold;
+	text-decoration: none;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	color: white;
+	z-index: 99;
+	cursor: pointer;
+}
